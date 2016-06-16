@@ -1,7 +1,7 @@
 import Ractive from 'ractive';
 
 Ractive.components.CalendarControls = Ractive.extend({
-  template: `<div class="btn-group {{class}}">
+  template: `<div class="btn-group btn-group-sm {{class}}">
                <button class="btn btn-default" on-click="back">
                  <i class="fa fa-angle-up"></i>
                </button>

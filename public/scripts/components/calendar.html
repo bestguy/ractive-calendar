@@ -2,14 +2,25 @@
 
   <!-- Header -->
   <div class="row">
-    <div class="col-xs-7">
-      <h1>{{datetime(date, 'MMMM YYYY')}}</h1>
+    <div class="col-sm-5">
+      {{#if view == 'DAY'}}
+        <h2>{{datetime(date, 'MMMM D, YYYY')}}</h2>
+      {{else}}
+        <h2>{{datetime(date, 'MMMM YYYY')}}</h2>
+      {{/if}}
     </div>
-    <div class="col-xs-5 text-right">
-      <CalendarControls class="h1" on-back="back" on-today="today" on-forward="forward" />
+    <div class="col-sm-7 text-right">
+      <ViewControls class="h2" on-view="view" />
+      <CalendarControls class="h2" on-back="back" on-today="today" on-forward="forward" />
     </div>
   </div>
 
-  <Month />
+  {{#if view == 'DAY'}}
+    <DayView />
+  {{elseif view == 'WEEK'}}
+    <WeekView />
+  {{else}}
+    <MonthView />
+  {{/if}}
 
 </div>

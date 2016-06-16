@@ -10,7 +10,7 @@
   { "id": 8, "title": "Ricky", "date": "2016-07-07", "type": "birthday", "url": "http://www.google.com" },
   { "id": 9, "title": "Hawaii", "date": "2016-07-14", "type": "personal", "url": "http://www.google.com" },
   { "id": 10, "title": "PTO", "date": "2016-07-14", "type": "work", "url": "http://www.google.com" },
-  { "id": 11, "title": "Doctor", "date": "2016-07-24", "type": "personal", "url": "http://www.google.com" },
+  { "id": 11, "title": "Doctor Ephram Papadopoulus", "date": "2016-07-24", "type": "personal", "url": "http://www.google.com" },
   { "id": 12, "title": "San Francisco", "date": "2016-08-01", "type": "personal", "url": "http://www.google.com" },
   { "id": 13, "title": "Offsite", "date": "2016-08-04", "type": "work", "url": "http://www.google.com" },
   { "id": 14, "title": "Wally", "date": "2016-08-04", "type": "birthday", "url": "http://www.google.com" },
