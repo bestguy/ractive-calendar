@@ -26,9 +26,9 @@ let app = new Ractive({
   },
   template: `<div class="container">
                <aside class="col-md-2 col-sm-3">
-                 <h3>Events</h3>
+                 <h3>Show:</h3>
                  <EventFilter filter={{visible}} />
-                 <hr />
+                 <hr class="visible-xs" />
                </aside>
 
                <div class="col-md-10 col-sm-9">
