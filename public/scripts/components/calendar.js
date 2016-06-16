@@ -76,7 +76,7 @@ Ractive.components.Calendar = Ractive.extend({
 
         days.push(day);
         startDate.add(1, 'days');
-      }  while (startDate.isBefore(endDate));
+      } while (startDate.isBefore(endDate));
       return days;
     },
     weeks() {
