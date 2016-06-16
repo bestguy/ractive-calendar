@@ -1,0 +1,15 @@
+<div class="fc-calendar-container">
+
+  <!-- Header -->
+  <div class="row">
+    <div class="col-xs-7">
+      <h1>{{datetime(date, 'MMMM YYYY')}}</h1>
+    </div>
+    <div class="col-xs-5 text-right">
+      <CalendarControls class="h1" on-back="back" on-today="today" on-forward="forward" />
+    </div>
+  </div>
+
+  <Month />
+
+</div>
