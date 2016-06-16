@@ -1,3 +1,4 @@
+import 'babel-polyfill';
 import Ractive from 'ractive';
 import fetch from 'isomorphic-fetch';
 import 'ractive-animatecss';

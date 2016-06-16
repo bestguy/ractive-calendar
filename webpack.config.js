@@ -3,6 +3,7 @@ let BASE = __dirname + '/public/scripts/';
 
 module.exports = {
   entry: [
+    'babel-polyfill',
     __dirname + '/public/scripts/main.js'
   ],
   output: {
