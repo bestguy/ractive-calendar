@@ -3,7 +3,7 @@ import './month_header.js';
 import './week.js';
 
 Ractive.components.MonthView = Ractive.extend({
-  template: `<div class="fc-calendar fc-five-rows">
+  template: `<div class="fc-calendar fc-month-view fc-five-rows">
                <MonthHeader />
                <div class="fc-body">
                  {{#each weeks}}

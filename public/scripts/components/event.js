@@ -2,7 +2,7 @@ import Ractive from 'ractive';
 
 Ractive.components.Event = Ractive.extend({
   template: `<div class="fc-calendar-events" on-click="event:{{event}}">
-               <a class="fc-event" href="{{url}}" target="_blank">
+               <a class="fc-event fc-event-{{type}}" href="{{url}}" target="_blank">
                  {{#if type == 'birthday'}}
                    <i class="fa fa-fw fa-birthday-cake"></i>
                  {{elseif type == 'personal'}}
