@@ -5,6 +5,7 @@ import './week_day.js';
 import './week_header.js';
 
 Ractive.components.DayView = Ractive.extend({
+  isolated: true,
   template: `<div class="fc-calendar fc-day-view fc-one-row">
                <div class="fc-head text-left">
                  {{datetime(date, 'dddd')}}

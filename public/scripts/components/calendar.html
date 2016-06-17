@@ -16,11 +16,11 @@
   </div>
 
   {{#if view == 'DAY'}}
-    <DayView />
+    <DayView date={{date}} days={{days}} />
   {{elseif view == 'WEEK'}}
-    <WeekView />
+    <WeekView date={{date}} days={{days}} />
   {{else}}
-    <MonthView />
+    <MonthView date={{date}} weeks={{weeks}} />
   {{/if}}
 
 </div>

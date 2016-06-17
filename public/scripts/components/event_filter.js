@@ -1,6 +1,7 @@
 import Ractive from 'ractive';
 
 Ractive.components.EventFilter = Ractive.extend({
+  isolated: true,
   template: `<div>
                <div class="checkbox">
                  <label>

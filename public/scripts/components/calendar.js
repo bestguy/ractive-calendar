@@ -10,6 +10,7 @@ import './week_view.js';
 import './calendar.less';
 
 Ractive.components.Calendar = Ractive.extend({
+  isolated: true,
   template: require('./calendar.html'),
   data() {
     return {
@@ -53,6 +54,7 @@ Ractive.components.Calendar = Ractive.extend({
       }
     },
     days() {
+      let current_date = this.get('date');
       let startDate = this.get('startDate').clone();
       let endDate = this.get('endDate');
       let today = moment().startOf('day');
@@ -69,6 +71,7 @@ Ractive.components.Calendar = Ractive.extend({
           date: date.toDate(),
           past: date.isBefore(today),
           today: date.isSame(today, 'day'),
+          same_month: date.isSame(current_date, 'month'),
           future: date.isAfter(today),
           first: date.date() == 1,
           events: eventsByDay[date.format('YYYY-MM-DD')] // TODO temp
