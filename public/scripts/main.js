@@ -6,7 +6,6 @@ import 'ractive-datetime';
 import './helpers.js';
 import './components/calendar.js';
 import './components/event_filter.js';
-import './components/overlay.js';
 
 import './main.css';
 
